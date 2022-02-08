@@ -62,8 +62,11 @@ namespace streaming_dl_helper
             this.ClientSize = new System.Drawing.Size(606, 297);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "caution";
-            this.Text = "caution";
+            this.ShowIcon = false;
+            this.Text = "ご使用上の注意";
             this.ResumeLayout(false);
             this.PerformLayout();
 

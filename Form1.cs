@@ -151,5 +151,10 @@ namespace streaming_dl_helper
         {
             Process.Start("explorer.exe", "https://tools.ic731.net/stream_dl");
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Process.Start("explorer.exe", "https://tools.ic731.net/stream_dl");
+        }
     }
 }

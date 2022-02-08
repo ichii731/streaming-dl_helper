@@ -5,6 +5,7 @@
     <TargetFramework>net5.0-windows</TargetFramework>
     <RootNamespace>streaming_dl_helper</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>AnyConv.com__stream-dl.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>

@@ -101,8 +101,11 @@ namespace streaming_dl_helper
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "about";
-            this.Text = "about";
+            this.ShowIcon = false;
+            this.Text = "ソフトウェアについて";
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -29,6 +29,7 @@ namespace streaming_dl_helper
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,6 +41,7 @@ namespace streaming_dl_helper
             this.情報ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.バージョンアップデートToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.使用上の注意ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ホームページご意見などToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button4 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -52,7 +54,6 @@ namespace streaming_dl_helper
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button3 = new System.Windows.Forms.Button();
-            this.ホームページご意見などToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -161,6 +162,13 @@ namespace streaming_dl_helper
             this.使用上の注意ToolStripMenuItem.Text = "使用上の注意";
             this.使用上の注意ToolStripMenuItem.Click += new System.EventHandler(this.使用上の注意ToolStripMenuItem_Click);
             // 
+            // ホームページご意見などToolStripMenuItem
+            // 
+            this.ホームページご意見などToolStripMenuItem.Name = "ホームページご意見などToolStripMenuItem";
+            this.ホームページご意見などToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
+            this.ホームページご意見などToolStripMenuItem.Text = "ホームページ(ご意見など)";
+            this.ホームページご意見などToolStripMenuItem.Click += new System.EventHandler(this.ホームページご意見などToolStripMenuItem_Click);
+            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.button4);
@@ -263,6 +271,7 @@ namespace streaming_dl_helper
             this.linkLabel1.TabIndex = 10;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "ソフトの使用方法";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // linkLabel2
             // 
@@ -285,13 +294,6 @@ namespace streaming_dl_helper
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // ホームページご意見などToolStripMenuItem
-            // 
-            this.ホームページご意見などToolStripMenuItem.Name = "ホームページご意見などToolStripMenuItem";
-            this.ホームページご意見などToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
-            this.ホームページご意見などToolStripMenuItem.Text = "ホームページ(ご意見など)";
-            this.ホームページご意見などToolStripMenuItem.Click += new System.EventHandler(this.ホームページご意見などToolStripMenuItem_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -312,7 +314,9 @@ namespace streaming_dl_helper
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Streaming-DL Helper v1.0";
             this.statusStrip1.ResumeLayout(false);
