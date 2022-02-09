@@ -6,11 +6,28 @@
     <RootNamespace>streaming_dl_helper</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationIcon>AnyConv.com__stream-dl.ico</ApplicationIcon>
+    <Version>1.0</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Product>Streaming-DL Helper</Product>
+    <Company />
+    <Authors>ichii731</Authors>
+    <Copyright>(c)2022 ichii731</Copyright>
+    <PackageProjectUrl>https://tools.ic731.net/stream_dl</PackageProjectUrl>
+    <PackageIcon>stream-dl.png</PackageIcon>
+    <PackageIconUrl />
+    <PackageId>Streaming-DL Helper</PackageId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.WindowsAPICodePack-Shell" Version="1.1.0" />
     <PackageReference Include="WindowsAPICodePack-Core" Version="1.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\stream-dl.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
